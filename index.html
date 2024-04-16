@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ryaan.win/</title>
     <style>
-        body {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-    }
-    
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
+        #container {
+            width: 100vw;
+            height: 100vh;
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            display: grid;
+            place-content: center;
+            background: #141414;
         }
-        50% {
-            background-position: 100% 50%;
+        #about {
+            padding: 10px;
+            color: whitesmoke;
+            text-align: left;
+            font-family: monospace;
         }
-        100% {
-            background-position: 0% 50%;
+        #email::before {
+            content: "root"; 
         }
-    }
-    
+        #email::after {
+            content: "ryaan.win";
+        }
+        a {
+            color: whitesmoke;
+        }
     </style>
 </head>
 <body>
+    <div id = "container">
+        <div id = "about">
+            <h1>Ryaan</h1>
+            <hr>
+            <p>I haven't done anything notable just yet...</p>
+            <p><span id = "email">@</span> | <a href = "https://github.com/rahmed29">github</a></p>
+        </div>
+    </div>
 </body>
 </html>
